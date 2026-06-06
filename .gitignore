@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+*.xcodeproj/project.xcworkspace/
+
+# Vapor / Server
+Server/.build/
+Server/*.env
+Server/.env
+Server/.env.*
+
+# Environment / secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p8
+*.p12
+
+# Logs
+*.log
+logs/
+
+# Media uploads (server)
+Server/Public/media/
+
+# Node (if ever used)
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# Claude / AI tooling
+.claude/
+CLAUDE.md
