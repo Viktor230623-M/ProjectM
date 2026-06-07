@@ -18,7 +18,14 @@ struct OTPView: View {
                 Text("Sent to \(vm.phoneNumber)")
                     .font(.mCallout())
                     .foregroundStyle(Color.mTextSecondary)
-                    .padding(.bottom, 40)
+                    .padding(.bottom, vm.devOTP == nil ? 40 : 8)
+
+                if let otp = vm.devOTP {
+                    Text("Dev code: \(otp)")
+                        .font(.mCaption())
+                        .foregroundStyle(Color.mPrimary)
+                        .padding(.bottom, 32)
+                }
 
                 // 6-digit display boxes backed by hidden field
                 HStack(spacing: 12) {
