@@ -3,7 +3,7 @@ import ProjectMShared
 
 final class WebSocketClient: ObservableObject {
     private var task: URLSessionWebSocketTask?
-    private let wsBase = ProcessInfo.processInfo.environment["WS_BASE_URL"] ?? "ws://localhost:8080/ws"
+    private let wsBase = ProcessInfo.processInfo.environment["WS_BASE_URL"] ?? "ws://31.97.180.253/ws"
 
     var onEvent: ((WSEvent) -> Void)?
 

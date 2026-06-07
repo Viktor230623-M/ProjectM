@@ -1,7 +1,7 @@
 import Foundation
 
 enum Endpoint {
-    static let base = ProcessInfo.processInfo.environment["API_BASE_URL"] ?? "http://localhost:8080/api/v1"
+    static let base = ProcessInfo.processInfo.environment["API_BASE_URL"] ?? "http://31.97.180.253/api/v1"
 
     case requestOTP
     case verifyOTP
